@@ -1,11 +1,22 @@
 import React, {Component} from 'react';
-import {Text, View} from 'react-native';
+import {
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  StatusBar,
+  AsyncStorage,
+  ActivityIndicator,
+} from 'react-native';
 
-export default class index extends Component {
+import api from '../../services/api';
+import styles from './styles';
+
+export default class Welcome extends Component {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text> Welcome </Text>
       </View>
     );
   }
